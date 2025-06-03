@@ -1,6 +1,6 @@
 import { LocationData, IPInfoResponse } from "../types/IPInfoType";
 
-const TOKEN = 'a0cc6a61ed2931';
+const TOKEN = process.env.REACT_APP_API_INFO;
 
 export const getLocation = (): Promise<LocationData> => {
   return new Promise((resolve, reject) => {
